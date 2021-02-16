@@ -101,8 +101,8 @@ class RepoScriptBlockUtil {
         """
     }
 
-    static void configureJcenter(RepositoryHandler repositories) {
-        MirroredRepository.JCENTER.configure(repositories)
+    static void configureMavenCentral(RepositoryHandler repositories) {
+        MirroredRepository.MAVEN_CENTRAL.configure(repositories)
     }
 
     static String mavenCentralRepository(GradleDsl dsl = GROOVY) {
