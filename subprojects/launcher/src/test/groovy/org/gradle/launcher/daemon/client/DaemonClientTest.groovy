@@ -46,7 +46,7 @@ class DaemonClientTest extends ConcurrentSpecification {
     final ProcessEnvironment processEnvironment = Mock()
     final DaemonClient client = new DaemonClient(connector, outputEventListener, compatibilitySpec, new ByteArrayInputStream(new byte[0]), executorFactory, idGenerator, processEnvironment)
 
-    def executesAction() {
+    def "executes action"() {
         def resultMessage = Stub(BuildActionResult)
 
         when:
@@ -65,7 +65,7 @@ class DaemonClientTest extends ConcurrentSpecification {
         0 * _
     }
 
-    def rethrowsFailureToExecuteAction() {
+    def "rethrows failure to execute action"() {
         RuntimeException failure = new RuntimeException()
 
         when:
@@ -180,5 +180,27 @@ class DaemonClientTest extends ConcurrentSpecification {
 
         then:
         thrown(NoUsableDaemonFoundException)
+    }
+
+    def "does not try to start more than one daemon"() {
+        given:
+        DaemonClientConnection connection2 = Mock()
+        DaemonClientConnection connection3 = Mock()
+        connector.connect(compatibilitySpec) >>> [connection, null]
+        connector.startDaemon(compatibilitySpec) >>> [connection2, connection3]
+        connection.daemon >> Stub(DaemonConnectDetails)
+        connection.receive() >> Mock(DaemonUnavailable)
+        connection2.daemon >> Stub(DaemonConnectDetails)
+        connection2.receive() >> Mock(DaemonUnavailable)
+
+        when:
+        client.execute(Stub(BuildAction), Stub(BuildActionParameters), Stub(BuildRequestContext))
+
+        then:
+        1 * connection.stop()
+        1 * connection2.stop()
+        0 * connection3.stop()
+        def exception = thrown(NoUsableDaemonFoundException)
+        exception.message.contains 'A new daemon started but cannot be connected. This might indicate that the networking configuration blocks the connection to the daemon. Details of the created daemon'
     }
 }

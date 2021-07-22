@@ -139,9 +139,13 @@ public class DaemonClient implements BuildActionExecuter<BuildActionParameters, 
         LOGGER.debug("Executing build {} in daemon client {pid={}}", buildId, processEnvironment.maybeGetPid());
 
         int saneNumberOfAttempts = 100; //is it sane enough?
+        DaemonClientConnection newDaemon = null;
+        for (int i = 1; i < saneNumberOfAttempts && newDaemon == null; i++) {
+            DaemonClientConnection connection = connector.connect(compatibilitySpec);
+            if (connection == null) {
+                newDaemon = connection = connector.startDaemon(compatibilitySpec);
+            }
 
-        for (int i = 1; i < saneNumberOfAttempts; i++) {
-            final DaemonClientConnection connection = connector.connect(compatibilitySpec);
             try {
                 Build build = new Build(buildId, connection.getDaemon().getToken(), action, requestContext.getClient(), requestContext.getStartTime(), requestContext.isInteractive(), parameters);
                 return executeBuild(build, connection, requestContext.getCancellationToken(), requestContext.getEventConsumer());
@@ -152,6 +156,15 @@ public class DaemonClient implements BuildActionExecuter<BuildActionParameters, 
             } finally {
                 connection.stop();
             }
+        }
+
+        if (newDaemon != null) {
+            throw new NoUsableDaemonFoundException("A new daemon started but cannot be connected. " +
+                "This might indicate that the networking configuration blocks the connection to the daemon. " +
+                "Details of the created daemon: " +
+                "pid=" + newDaemon.getDaemon() + ", " +
+                "address= " + newDaemon.getDaemon().getAddress() + ". " +
+                "BuildActionParameters were " + parameters + ".", accumulatedExceptions);
         }
 
         throw new NoUsableDaemonFoundException("Unable to find a usable idle daemon. I have connected to "
