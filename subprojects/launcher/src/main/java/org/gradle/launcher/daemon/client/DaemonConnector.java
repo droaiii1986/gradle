@@ -58,6 +58,7 @@ public interface DaemonConnector {
      *
      * @return A connection to a matching daemon. Returns null if no matching daemon is available.
      */
+    @Nullable
     DaemonClientConnection connect(ExplainingSpec<DaemonContext> constraint);
 
     /**
