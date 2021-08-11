@@ -159,8 +159,8 @@ public class DaemonClient implements BuildActionExecuter<BuildActionParameters, 
         }
 
         if (newDaemon != null) {
-            throw new NoUsableDaemonFoundException("A new daemon started but cannot be connected. " +
-                "This might indicate that the networking configuration blocks the connection to the daemon. " +
+            throw new NoUsableDaemonFoundException("A new daemon was started but could not be connected to. " +
+                "This may indicate that some networking configuration blocks the connection to the daemon. " +
                 "Details of the created daemon: " +
                 "pid=" + newDaemon.getDaemon() + ", " +
                 "address= " + newDaemon.getDaemon().getAddress() + ". " +
