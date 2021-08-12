@@ -168,7 +168,7 @@ FAILURE: Build failed with an exception.
 A new daemon was started but could not be connected to: pid=DaemonInfo{pid=55913, address=[7fb34c82-1907-4c32-afda-888c9b6e2279 port:42751, addresses:[/127.0.0.1]], state=Busy, ...
 ```
 
-This may happen when the connection request comes from an IP address that Gradle labels as external (and rejects due to security concerns). This can happen in some NAT network setup. The solution is to adjust the network configuration such that local network connections are not routed through external addresses.
+This may happen when the connection request comes from an IP address that Gradle labels as external (and rejects due to security concerns). We have observed this scenario in some NAT network setup. The solution is to adjust the network configuration such that local network connections are not routed through external addresses.
 
 You can monitor the detected network setup and the connection requests in the daemon log file (`~/.gradle/daemon/7.3-20210812095839+0000/daemon-<PID>.out.log).
 
