@@ -138,14 +138,15 @@ public class DaemonClient implements BuildActionExecuter<BuildActionParameters, 
 
         LOGGER.debug("Executing build {} in daemon client {pid={}}", buildId, processEnvironment.maybeGetPid());
 
+        // Attempt to connect to an existing idle and compatible daemon
         int saneNumberOfAttempts = 100; //is it sane enough?
-        DaemonClientConnection newDaemon = null;
-        for (int i = 1; i < saneNumberOfAttempts && newDaemon == null; i++) {
-            DaemonClientConnection connection = connector.connect(compatibilitySpec);
+        for (int i = 1; i < saneNumberOfAttempts; i++) {
+            final DaemonClientConnection connection = connector.connect(compatibilitySpec);
+            // No existing, compatible daemon is available to try
             if (connection == null) {
-                newDaemon = connection = connector.startDaemon(compatibilitySpec);
+                break;
             }
-
+            // Compatible daemon was found, try it
             try {
                 Build build = new Build(buildId, connection.getDaemon().getToken(), action, requestContext.getClient(), requestContext.getStartTime(), requestContext.isInteractive(), parameters);
                 return executeBuild(build, connection, requestContext.getCancellationToken(), requestContext.getEventConsumer());
@@ -158,18 +159,22 @@ public class DaemonClient implements BuildActionExecuter<BuildActionParameters, 
             }
         }
 
-        if (newDaemon != null) {
+        // No existing daemon was usable, so start a new one and try it once
+        final DaemonClientConnection connection = connector.startDaemon(compatibilitySpec);
+        try {
+            Build build = new Build(buildId, connection.getDaemon().getToken(), action, requestContext.getClient(), requestContext.getStartTime(), requestContext.isInteractive(), parameters);
+            return executeBuild(build, connection, requestContext.getCancellationToken(), requestContext.getEventConsumer());
+        } catch (DaemonInitialConnectException e) {
+            // This means we could not connect to the daemon we just started.  fail and don't try again
             throw new NoUsableDaemonFoundException("A new daemon was started but could not be connected to. " +
                 "This may indicate that some networking configuration blocks the connection to the daemon. " +
                 "Details of the created daemon: " +
-                "pid=" + newDaemon.getDaemon() + ", " +
-                "address= " + newDaemon.getDaemon().getAddress() + ". " +
+                "pid=" + connection.getDaemon() + ", " +
+                "address= " + connection.getDaemon().getAddress() + ". " +
                 "BuildActionParameters were " + parameters + ".", accumulatedExceptions);
+        } finally {
+            connection.stop();
         }
-
-        throw new NoUsableDaemonFoundException("Unable to find a usable idle daemon. I have connected to "
-            + saneNumberOfAttempts + " different daemons but I could not use any of them to run the build. BuildActionParameters were "
-            + parameters + ".", accumulatedExceptions);
     }
 
     protected BuildActionResult executeBuild(Build build, DaemonClientConnection connection, BuildCancellationToken cancellationToken, BuildEventConsumer buildEventConsumer) throws DaemonInitialConnectException {

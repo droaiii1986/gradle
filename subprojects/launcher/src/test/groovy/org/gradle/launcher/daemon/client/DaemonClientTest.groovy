@@ -172,6 +172,7 @@ class DaemonClientTest extends ConcurrentSpecification {
     def "does not loop forever finding usable daemons"() {
         given:
         connector.connect(compatibilitySpec) >> connection
+        connector.startDaemon(compatibilitySpec) >> connection
         connection.daemon >> Stub(DaemonConnectDetails)
         connection.receive() >> Mock(DaemonUnavailable)
 
@@ -201,6 +202,6 @@ class DaemonClientTest extends ConcurrentSpecification {
         1 * connection2.stop()
         0 * connection3.stop()
         def exception = thrown(NoUsableDaemonFoundException)
-        exception.message.contains 'A new daemon started but cannot be connected. This might indicate that the networking configuration blocks the connection to the daemon. Details of the created daemon'
+        exception.message.contains 'A new daemon was started but could not be connected to. This may indicate that some networking configuration blocks the connection to the daemon. Details of the created daemon'
     }
 }
