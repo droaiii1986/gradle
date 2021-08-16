@@ -196,7 +196,7 @@ task someTask
             apply plugin: 'maven'
 
             repositories {
-                ${jcenterRepository()}
+                ${mavenCentralRepository()}
             }
             dependencies {
                 implementation("org.scala-lang:scala-library:2.12.6")

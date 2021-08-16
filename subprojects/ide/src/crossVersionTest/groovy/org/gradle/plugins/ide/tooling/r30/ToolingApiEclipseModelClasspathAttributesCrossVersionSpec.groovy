@@ -32,7 +32,7 @@ class ToolingApiEclipseModelClasspathAttributesCrossVersionSpec extends ToolingA
         """apply plugin: 'java'
            apply plugin: 'eclipse'
            ${mavenCentralRepository()}
-           dependencies { ${implementationConfiguration} 'com.google.guava:guava:18.0' }
+           dependencies { compile 'com.google.guava:guava:18.0' }
            eclipse {
                classpath {
                    downloadJavadoc = true
