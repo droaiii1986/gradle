@@ -23,6 +23,7 @@ import org.gradle.util.GradleVersion
 import org.gradle.util.Requires
 import org.gradle.util.TestPrecondition
 import org.gradle.util.VersionNumber
+import spock.lang.Unroll
 
 /**
  * For these tests to run you need to set ANDROID_HOME to your Android SDK directory
@@ -63,8 +64,9 @@ class AndroidPluginsSmokeTest extends AbstractSmokeTest {
         ].combinations()
     }
 
+    @Unroll
     @UnsupportedWithConfigurationCache(iterationMatchers = [AGP_3_ITERATION_MATCHER, AGP_4_0_ITERATION_MATCHER, AGP_4_1_ITERATION_MATCHER])
-    def "android library and application APK assembly"(String agpVersion, boolean ide) {
+    def "android library and application APK assembly (agp=#agpVersion, ide=#ide)"(String agpVersion, boolean ide) {
 
         given:
         def abiChange = androidLibraryAndApplicationBuild(agpVersion)
