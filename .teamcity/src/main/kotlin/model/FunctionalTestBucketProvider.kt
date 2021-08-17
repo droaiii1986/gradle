@@ -78,7 +78,7 @@ class GradleVersionRangeCrossVersionTestBucket(private val startInclusive: Strin
     override fun createFunctionalTestsFor(model: CIBuildModel, stage: Stage, testCoverage: TestCoverage, bucketIndex: Int) =
         FunctionalTest(
             model,
-            getUuid(model, testCoverage, bucketIndex),
+            testCoverage.getBucketUuid(model, bucketIndex),
             "${testCoverage.asName()} ($startInclusive <= gradle <$endExclusive)",
             "${testCoverage.asName()} for gradle ($startInclusive <= gradle <$endExclusive)",
             testCoverage,
@@ -113,7 +113,7 @@ class LargeSubprojectSplitBucket(
     override fun createFunctionalTestsFor(model: CIBuildModel, stage: Stage, testCoverage: TestCoverage, bucketIndex: Int): FunctionalTest =
         FunctionalTest(
             model,
-            getUuid(model, testCoverage, bucketIndex),
+            testCoverage.getBucketUuid(model, bucketIndex),
             getName(testCoverage),
             getDescription(testCoverage),
             testCoverage,
@@ -178,7 +178,7 @@ class SmallSubprojectBucket(
     override fun createFunctionalTestsFor(model: CIBuildModel, stage: Stage, testCoverage: TestCoverage, bucketIndex: Int): FunctionalTest =
         FunctionalTest(
             model,
-            getUuid(model, testCoverage, bucketIndex),
+            testCoverage.getBucketUuid(model, bucketIndex),
             getName(testCoverage),
             getDescription(testCoverage),
             testCoverage,
