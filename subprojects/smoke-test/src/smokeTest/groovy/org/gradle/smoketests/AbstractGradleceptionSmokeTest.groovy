@@ -45,7 +45,6 @@ abstract class AbstractGradleceptionSmokeTest extends AbstractSmokeTest {
         and:
         def buildJavaHome = AvailableJavaHomes.getAvailableJdks(new GradleBuildJvmSpec()).last().javaHome
         file("gradle.properties") << "\norg.gradle.java.home=${buildJavaHome}\n"
-
     }
 
     BuildResult getResult() {
@@ -70,7 +69,7 @@ abstract class AbstractGradleceptionSmokeTest extends AbstractSmokeTest {
         def runner = testKitDir != null
             ? runnerWithTestKitDir(testKitDir, gradleArgs)
             : runner(*gradleArgs)
-        runner.ignoreDeprecationWarnings()
+        runner.ignoreDeprecationWarnings("Gradleception smoke tests don't check for deprecation warnings; TODO: we should add expected deprecations for each task being called")
         return runner
     }
 

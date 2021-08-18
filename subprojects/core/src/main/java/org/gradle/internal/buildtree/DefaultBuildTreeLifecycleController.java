@@ -18,8 +18,8 @@ package org.gradle.internal.buildtree;
 import org.gradle.api.internal.GradleInternal;
 import org.gradle.api.internal.SettingsInternal;
 import org.gradle.composite.internal.IncludedBuildTaskGraph;
-import org.gradle.initialization.exception.ExceptionAnalyser;
 import org.gradle.internal.build.BuildLifecycleController;
+import org.gradle.internal.build.BuildToolingModelAction;
 import org.gradle.internal.build.ExecutionResult;
 
 import java.util.function.Function;
@@ -33,22 +33,21 @@ public class DefaultBuildTreeLifecycleController implements BuildTreeLifecycleCo
     private final BuildTreeWorkExecutor workExecutor;
     private final BuildTreeModelCreator modelCreator;
     private final BuildTreeFinishExecutor finishExecutor;
-    private final ExceptionAnalyser exceptionAnalyser;
 
-    public DefaultBuildTreeLifecycleController(BuildLifecycleController buildLifecycleController,
-                                               IncludedBuildTaskGraph taskGraph,
-                                               BuildTreeWorkPreparer workPreparer,
-                                               BuildTreeWorkExecutor workExecutor,
-                                               BuildTreeModelCreator modelCreator,
-                                               BuildTreeFinishExecutor finishExecutor,
-                                               ExceptionAnalyser exceptionAnalyser) {
+    public DefaultBuildTreeLifecycleController(
+        BuildLifecycleController buildLifecycleController,
+        IncludedBuildTaskGraph taskGraph,
+        BuildTreeWorkPreparer workPreparer,
+        BuildTreeWorkExecutor workExecutor,
+        BuildTreeModelCreator modelCreator,
+        BuildTreeFinishExecutor finishExecutor
+    ) {
         this.buildLifecycleController = buildLifecycleController;
         this.taskGraph = taskGraph;
         this.workPreparer = workPreparer;
         this.modelCreator = modelCreator;
         this.workExecutor = workExecutor;
         this.finishExecutor = finishExecutor;
-        this.exceptionAnalyser = exceptionAnalyser;
     }
 
     @Override
@@ -65,8 +64,9 @@ public class DefaultBuildTreeLifecycleController implements BuildTreeLifecycleCo
     }
 
     @Override
-    public <T> T fromBuildModel(boolean runTasks, Function<? super GradleInternal, T> action) {
+    public <T> T fromBuildModel(boolean runTasks, BuildToolingModelAction<? extends T> action) {
         return runBuild(() -> {
+            modelCreator.beforeTasks(action);
             if (runTasks) {
                 ExecutionResult<Void> result = doScheduleAndRunTasks();
                 if (!result.getFailures().isEmpty()) {
@@ -106,10 +106,7 @@ public class DefaultBuildTreeLifecycleController implements BuildTreeLifecycleCo
             result = ExecutionResult.failed(t);
         }
 
-        ExecutionResult<Void> finishResult = finishExecutor.finishBuildTree(result.getFailures());
-        result = result.withFailures(finishResult);
-
-        RuntimeException finalReportableFailure = exceptionAnalyser.transform(result.getFailures());
+        RuntimeException finalReportableFailure = finishExecutor.finishBuildTree(result.getFailures());
         if (finalReportableFailure != null) {
             throw finalReportableFailure;
         }
