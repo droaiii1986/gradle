@@ -12,7 +12,7 @@ subprojects {
         google()
         mavenCentral()
         /*
-        jcenter() requried because:
+        jcenter() required because:
         > Could not resolve all files for configuration ':android-kotlin-library:lintClassPath'.
            > Could not find org.jetbrains.trove4j:trove4j:20160824.
              Searched in the following locations:
