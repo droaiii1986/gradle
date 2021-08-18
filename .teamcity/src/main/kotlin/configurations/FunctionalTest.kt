@@ -1,5 +1,6 @@
 package configurations
 
+import common.Os
 import common.functionalTestExtraParameters
 import jetbrains.buildServer.configs.kotlin.v2019_2.BuildSteps
 import model.CIBuildModel
@@ -37,7 +38,7 @@ class FunctionalTest(
         model, this, testTasks, notQuick = !testCoverage.isQuick, os = testCoverage.os,
         extraParameters = (
             listOf(functionalTestExtraParameters("FunctionalTest", testCoverage.os, testCoverage.testJvmVersion.major.toString(), testCoverage.vendor.name)) +
-                if (enableTestDistribution) "-DenableTestDistribution=%enableTestDistribution% -DtestDistributionPartitionSizeInSeconds=%testDistributionPartitionSizeInSeconds%" else "" +
+                if (testCoverage.os == Os.LINUX) "-DenableTestDistribution=%enableTestDistribution% -DtestDistributionPartitionSizeInSeconds=%testDistributionPartitionSizeInSeconds%" else "" +
                 extraParameters
             ).filter { it.isNotBlank() }.joinToString(separator = " "),
         timeout = testCoverage.testType.timeout,
