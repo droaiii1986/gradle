@@ -104,7 +104,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"java-compiler-plugin",
@@ -120,7 +120,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-native",
 					"internal-testing",
@@ -136,7 +136,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"execution",
@@ -152,7 +152,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"publish",
@@ -164,7 +164,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"resources-gcs",
@@ -173,7 +173,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"model-groovy",
@@ -181,7 +181,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"wrapper",
@@ -191,7 +191,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"diagnostics",
@@ -200,7 +200,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl",
 					"platform-base",
@@ -209,7 +209,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"persistent-cache",
@@ -218,7 +218,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"version-control",
 					"file-watching",
@@ -226,14 +226,14 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"enterprise",
 					"kotlin-dsl-plugins"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"platform-native"
@@ -718,7 +718,7 @@
 					"org.gradle.api.internal.initialization.loadercache.ClassLoadersCachingIntegrationTest=integTest",
 					"org.gradle.api.InitScriptExecutionIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -1264,7 +1264,7 @@
 					"org.gradle.integtests.resolve.attributes.DependenciesAttributesIntegrationTest=integTest",
 					"org.gradle.integtests.resolve.RepositoryInteractionDependencyResolveIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"dependency-management"
 			},
@@ -1583,7 +1583,7 @@
 					"org.gradle.integtests.tooling.r42.BuildProgressTaskActionsCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":5,
 				"subproject":"tooling-api"
 			},
@@ -1750,7 +1750,7 @@
 					"org.gradle.api.plugins.DistributionPluginIntegrationTest=integTest",
 					"org.gradle.groovy.compile.SameToolchainGroovyCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -1847,7 +1847,7 @@
 					"org.gradle.integtests.composite.CompositeBuildIncludeCycleIntegrationTest=integTest",
 					"org.gradle.integtests.composite.CompositeContinuousBuildIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"composite-builds"
 			},
@@ -1978,7 +1978,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheScriptChangesIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheInitScriptsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -2195,7 +2195,7 @@
 					"org.gradle.plugins.ide.eclipse.EclipseProjectIntegrationTest=integTest",
 					"org.gradle.plugins.ide.tooling.m3.ToolingApiEclipseModelCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"ide"
 			},
@@ -2287,7 +2287,7 @@
 					"org.gradle.launcher.daemon.ProcessCrashHandlingIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.server.scaninfo.DaemonScanInfoIntegrationSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -2323,7 +2323,7 @@
 					"org.gradle.kotlin.dsl.tooling.builders.r54.KotlinInitScriptModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.kotlin.dsl.tooling.builders.r54.AccessorsClassPathModelCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"kotlin-dsl-tooling-builders"
 			},
@@ -2381,7 +2381,7 @@
 					"org.gradle.integtests.samples.SamplesScalaZincIntegrationTest=integTest",
 					"org.gradle.integtests.samples.SamplesScalaCustomizedLayoutIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"scala"
 			},
@@ -2423,7 +2423,7 @@
 					"org.gradle.plugin.use.VersionedPluginUseIntegrationTest=integTest",
 					"org.gradle.plugin.repository.ResolvingWithPluginManagementSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"plugin-use"
 			},
@@ -2493,12 +2493,12 @@
 					"org.gradle.api.publish.maven.MavenPublishFeaturesJavaPluginIntegTest=integTest",
 					"org.gradle.api.publish.maven.MavenPublishHttpIntegTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"maven"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"integ-test",
 					"java-compiler-plugin",
@@ -2514,7 +2514,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-java",
 					"internal-testing",
@@ -2530,7 +2530,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-native",
 					"execution",
@@ -2546,7 +2546,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-jvm",
 					"base-services",
@@ -2562,7 +2562,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"resources-sftp",
@@ -2574,7 +2574,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"platform-base",
@@ -2585,7 +2585,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"antlr",
@@ -2596,7 +2596,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"test-kit",
@@ -2605,7 +2605,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"file-watching",
@@ -2614,7 +2614,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"kotlin-dsl",
@@ -2622,7 +2622,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"plugin-development"
@@ -2663,7 +2663,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -2752,7 +2752,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide",
 					"java-compiler-plugin",
@@ -2768,7 +2768,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"internal-testing",
@@ -2784,7 +2784,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"resources-http",
@@ -2800,7 +2800,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-native",
 					"messaging",
@@ -2811,7 +2811,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"resources-sftp",
@@ -2820,7 +2820,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"reporting",
@@ -2829,7 +2829,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"antlr",
@@ -2838,7 +2838,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"build-cache-http",
@@ -2847,7 +2847,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"language-groovy",
@@ -2855,7 +2855,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"platform-base",
@@ -2863,7 +2863,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"file-collections",
@@ -2871,7 +2871,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"file-watching",
@@ -2879,7 +2879,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -2887,14 +2887,14 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"kotlin-dsl-integ-tests"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl"
 				]
@@ -2934,7 +2934,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -3490,7 +3490,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -3964,7 +3964,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -4255,7 +4255,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -4422,7 +4422,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -4607,7 +4607,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -4736,7 +4736,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -4930,7 +4930,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -5012,7 +5012,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -5104,7 +5104,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -5230,12 +5230,12 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"integ-test",
 					"java-compiler-plugin",
@@ -5251,7 +5251,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"internal-testing",
@@ -5267,7 +5267,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"resources-http",
@@ -5283,7 +5283,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"build-profile",
@@ -5295,7 +5295,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"build-cache",
@@ -5307,7 +5307,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"language-groovy",
@@ -5318,7 +5318,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"model-groovy",
@@ -5328,7 +5328,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"diagnostics",
@@ -5336,7 +5336,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -5344,7 +5344,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -5352,7 +5352,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -5360,28 +5360,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -5500,7 +5500,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-native",
 					"docs",
@@ -5516,7 +5516,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"process-services",
@@ -5526,7 +5526,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"publish",
@@ -5535,7 +5535,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl",
 					"kotlin-dsl-tooling-builders",
@@ -5544,7 +5544,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"build-cache",
@@ -5552,7 +5552,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"resources-sftp",
@@ -5560,7 +5560,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"core-api",
@@ -5568,7 +5568,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"build-cache-http",
@@ -5578,7 +5578,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"signing",
@@ -5587,7 +5587,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"tooling-api",
 					"jacoco",
@@ -5595,7 +5595,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"file-watching",
 					"enterprise",
@@ -5603,7 +5603,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-plugins",
 					"version-control"
@@ -5711,7 +5711,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"docs",
@@ -5723,7 +5723,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"resources",
@@ -5733,7 +5733,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"publish",
@@ -5742,7 +5742,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"messaging",
@@ -5751,7 +5751,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide",
 					"ear",
@@ -5760,7 +5760,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"reporting",
@@ -5769,7 +5769,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-native",
 					"build-cache-http",
@@ -5777,7 +5777,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl",
 					"testing-base",
@@ -5785,7 +5785,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"language-groovy",
@@ -5793,7 +5793,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"resources-s3",
@@ -5801,7 +5801,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"enterprise",
 					"jacoco",
@@ -5810,7 +5810,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"file-collections",
@@ -5818,7 +5818,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"version-control",
 					"kotlin-dsl-plugins",
@@ -5826,7 +5826,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"tooling-api",
 					"code-quality"
@@ -5946,7 +5946,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"docs",
@@ -5960,7 +5960,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide",
 					"resources",
@@ -5974,7 +5974,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"persistent-cache",
@@ -5982,7 +5982,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"language-groovy",
@@ -5991,7 +5991,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"launcher",
 					"build-cache",
@@ -5999,7 +5999,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"resources-sftp",
@@ -6007,7 +6007,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"reporting",
@@ -6015,7 +6015,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"core-api",
@@ -6023,7 +6023,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl",
 					"resources-s3",
@@ -6032,7 +6032,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"model-groovy",
@@ -6040,7 +6040,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"file-collections",
@@ -6048,21 +6048,21 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"version-control",
 					"enterprise"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-plugins",
 					"platform-base"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"diagnostics"
 				]
@@ -6626,7 +6626,7 @@
 					"org.gradle.integtests.resolve.locking.DependencyLockingStrictModeIntegrationTest=integTest",
 					"org.gradle.integtests.resolve.catalog.CatalogPluginsGroovyDSLIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":10,
 				"subproject":"dependency-management"
 			},
@@ -7107,7 +7107,7 @@
 					"org.gradle.api.tasks.CachedPathSensitivityIntegrationTest=integTest",
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":7,
 				"subproject":"core"
 			},
@@ -7285,7 +7285,7 @@
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest",
 					"org.gradle.groovy.compile.InProcessGroovyCompilerIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"plugins"
 			},
@@ -7423,7 +7423,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheScriptChangesIntegrationTest=integTest",
 					"org.gradle.configurationcache.inputs.undeclared.UndeclaredBuildInputsJavaLambdaBuildSrcIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"configuration-cache"
 			},
@@ -7507,7 +7507,7 @@
 					"org.gradle.api.tasks.compile.JavaCompileToolchainIntegrationTest=integTest",
 					"org.gradle.java.compile.incremental.JavaSourceCliIncrementalCompilationIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -7669,7 +7669,7 @@
 					"org.gradle.language.rc.WindowsResourcesIncrementalBuildIntegrationTest=integTest",
 					"org.gradle.language.cpp.CppStaticLibraryLinkageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-native"
 			},
@@ -7739,7 +7739,7 @@
 					"org.gradle.api.publish.maven.SamplesMavenPublishIntegrationTest=integTest",
 					"org.gradle.api.publish.maven.MavenPublishIdentifierValidationIntegTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"maven"
 			},
@@ -7867,7 +7867,7 @@
 					"org.gradle.testing.junit.JUnitFailFastIntegrationTest=integTest",
 					"org.gradle.testing.IncrementalTestIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
@@ -7963,7 +7963,7 @@
 					"org.gradle.integtests.SyncTaskIntegrationTest=integTest",
 					"org.gradle.integtests.ExecIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"integ-test"
 			},
@@ -8061,12 +8061,12 @@
 					"org.gradle.internal.logging.console.RichConsoleBuildPhaseFunctionalTest=integTest",
 					"org.gradle.internal.logging.console.taskgrouping.verbose.VerboseConsoleVerboseRenderingFunctionalTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"logging"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"docs",
@@ -8082,7 +8082,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"resources",
@@ -8098,7 +8098,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"build-events",
@@ -8108,7 +8108,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"ear",
@@ -8118,7 +8118,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"build-cache-http",
@@ -8127,7 +8127,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"jacoco",
@@ -8136,7 +8136,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide",
 					"file-collections",
@@ -8144,7 +8144,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality",
@@ -8152,7 +8152,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"platform-base",
@@ -8160,7 +8160,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"launcher",
 					"test-kit",
@@ -8168,7 +8168,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"samples",
 					"diagnostics",
@@ -8176,14 +8176,14 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-integ-tests",
 					"platform-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl"
 				]
@@ -8223,7 +8223,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -8735,7 +8735,7 @@
 					"org.gradle.integtests.resolve.verification.DependencyVerificationSignatureCheckIntegTest=integTest",
 					"org.gradle.integtests.resolve.reproducibility.FailOnDynamicVersionsResolveIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"dependency-management"
 			},
@@ -9141,7 +9141,7 @@
 					"org.gradle.api.tasks.CachedTaskExecutionIntegrationTest=integTest",
 					"org.gradle.util.internal.VersionNumberIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"core"
 			},
@@ -9295,7 +9295,7 @@
 					"org.gradle.java.dependencies.JavaConfigurationSetupIntegrationTest=integTest",
 					"org.gradle.api.plugins.ApplicationPluginIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"plugins"
 			},
@@ -9575,12 +9575,12 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r42.BuildProgressTaskActionsCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"tooling-api"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"configuration-cache",
 					"java-compiler-plugin",
@@ -9596,7 +9596,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-native",
 					"build-cache-packaging",
@@ -9612,7 +9612,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"launcher",
 					"internal-integ-testing",
@@ -9628,7 +9628,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"tooling-native",
@@ -9644,7 +9644,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-jvm",
 					"signing",
@@ -9660,7 +9660,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"platform-native",
@@ -9673,7 +9673,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-java",
 					"kotlin-dsl",
@@ -9683,7 +9683,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"ide",
@@ -9693,7 +9693,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"test-kit",
@@ -9821,7 +9821,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"docs",
@@ -9837,7 +9837,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy",
 					"platform-jvm",
@@ -9850,7 +9850,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide",
 					"ear",
@@ -9860,7 +9860,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl",
 					"build-cache",
@@ -9869,7 +9869,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"resources-sftp",
@@ -9878,7 +9878,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"testing-base",
@@ -9886,7 +9886,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"signing",
@@ -9895,7 +9895,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"version-control",
 					"platform-base",
@@ -9903,7 +9903,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-plugins",
 					"jacoco",
@@ -9911,14 +9911,14 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"tooling-api"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"enterprise",
 					"file-collections"
@@ -9996,7 +9996,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"launcher",
 					"antlr",
@@ -10093,7 +10093,7 @@
 					"org.gradle.groovy.compile.InProcessGroovyCompilerIntegrationTest=integTest",
 					"org.gradle.groovy.compile.SameToolchainGroovyCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -10226,12 +10226,12 @@
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest",
 					"org.gradle.language.cpp.CppBothLibraryLinkageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-jvm",
 					"wrapper",
@@ -10247,7 +10247,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"resources-http",
@@ -10263,7 +10263,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"persistent-cache",
@@ -10279,7 +10279,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"code-quality",
 					"kotlin-dsl",
@@ -10295,7 +10295,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"enterprise",
@@ -10311,7 +10311,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"testing-native",
@@ -10555,7 +10555,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -10590,7 +10590,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"java-compiler-plugin",
@@ -10606,7 +10606,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"internal-testing",
@@ -10622,7 +10622,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"execution",
@@ -10635,7 +10635,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -10646,7 +10646,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -10654,7 +10654,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -10662,28 +10662,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -11245,7 +11245,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -11719,7 +11719,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -12010,7 +12010,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -12177,7 +12177,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -12362,7 +12362,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -12491,7 +12491,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -12685,7 +12685,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -12767,7 +12767,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -12859,7 +12859,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -12985,7 +12985,7 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
@@ -13091,12 +13091,12 @@
 					"org.gradle.integtests.PluginBinaryCompatibilityCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.TaskTransitiveSubclassingBinaryCompatibilityCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"integ-test"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"java-compiler-plugin",
@@ -13112,7 +13112,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"internal-testing",
@@ -13128,7 +13128,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"execution",
@@ -13144,7 +13144,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"publish",
@@ -13160,7 +13160,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"build-cache-http",
@@ -13172,7 +13172,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"resources-s3",
@@ -13183,7 +13183,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"platform-base",
@@ -13192,7 +13192,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -13200,7 +13200,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -13208,7 +13208,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -13216,28 +13216,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -13277,7 +13277,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -13505,7 +13505,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -13540,7 +13540,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"java-compiler-plugin",
@@ -13556,7 +13556,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"internal-testing",
@@ -13572,7 +13572,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"resources-http",
@@ -13586,7 +13586,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"base-services",
@@ -13597,7 +13597,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"ear",
@@ -13605,7 +13605,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"resources-sftp",
@@ -13613,21 +13613,21 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"reporting"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base"
 				]
@@ -13667,7 +13667,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -14223,7 +14223,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -14697,7 +14697,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -14988,7 +14988,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -15155,7 +15155,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -15340,7 +15340,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -15469,7 +15469,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -15663,7 +15663,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -15745,7 +15745,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -15837,7 +15837,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -15963,12 +15963,12 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"integ-test",
 					"java-compiler-plugin",
@@ -15984,7 +15984,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"internal-testing",
@@ -16000,7 +16000,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"resources-http",
@@ -16016,7 +16016,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"build-profile",
@@ -16028,7 +16028,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"build-cache",
@@ -16040,7 +16040,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"language-groovy",
@@ -16051,7 +16051,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"model-groovy",
@@ -16061,7 +16061,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"diagnostics",
@@ -16069,7 +16069,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -16077,7 +16077,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -16085,7 +16085,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -16093,28 +16093,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -16348,7 +16348,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -16383,7 +16383,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"java-compiler-plugin",
@@ -16399,7 +16399,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"internal-testing",
@@ -16415,7 +16415,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"execution",
@@ -16428,7 +16428,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -16439,7 +16439,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -16447,7 +16447,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -16455,28 +16455,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -17038,7 +17038,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -17512,7 +17512,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -17803,7 +17803,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -17970,7 +17970,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -18155,7 +18155,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -18284,7 +18284,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -18478,7 +18478,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -18560,7 +18560,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -18652,7 +18652,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -18778,7 +18778,7 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
@@ -18884,12 +18884,12 @@
 					"org.gradle.integtests.PluginBinaryCompatibilityCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.TaskTransitiveSubclassingBinaryCompatibilityCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"integ-test"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"java-compiler-plugin",
@@ -18905,7 +18905,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"internal-testing",
@@ -18921,7 +18921,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"execution",
@@ -18937,7 +18937,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"publish",
@@ -18953,7 +18953,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"build-cache-http",
@@ -18965,7 +18965,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"resources-s3",
@@ -18976,7 +18976,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"platform-base",
@@ -18985,7 +18985,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -18993,7 +18993,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -19001,7 +19001,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -19009,28 +19009,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -19070,7 +19070,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -19298,7 +19298,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -19333,7 +19333,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"java-compiler-plugin",
@@ -19349,7 +19349,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"internal-testing",
@@ -19365,7 +19365,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"resources-http",
@@ -19379,7 +19379,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"base-services",
@@ -19390,7 +19390,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"ear",
@@ -19398,7 +19398,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"resources-sftp",
@@ -19406,21 +19406,21 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"reporting"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base"
 				]
@@ -19460,7 +19460,7 @@
 					"org.gradle.docs.samples.Bucket2SnippetsTest=docsTest",
 					"org.gradle.docs.samples.Bucket3SnippetsTest=docsTest"
 				],
-				"include":false,
+				"include":true,
 				"number":4,
 				"subproject":"docs"
 			},
@@ -20016,7 +20016,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -20490,7 +20490,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -20781,7 +20781,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -20948,7 +20948,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -21133,7 +21133,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -21262,7 +21262,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -21456,7 +21456,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -21538,7 +21538,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -21630,7 +21630,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -21756,12 +21756,12 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"integ-test",
 					"java-compiler-plugin",
@@ -21777,7 +21777,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"internal-testing",
@@ -21793,7 +21793,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"resources-http",
@@ -21809,7 +21809,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"build-profile",
@@ -21821,7 +21821,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"build-cache",
@@ -21833,7 +21833,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"language-groovy",
@@ -21844,7 +21844,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"model-groovy",
@@ -21854,7 +21854,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"diagnostics",
@@ -21862,7 +21862,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -21870,7 +21870,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -21878,7 +21878,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -21886,28 +21886,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -22141,7 +22141,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -22176,7 +22176,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"base-services-groovy",
@@ -22192,7 +22192,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"cli",
@@ -22208,7 +22208,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"internal-performance-testing",
@@ -22219,7 +22219,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -22230,7 +22230,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -22238,7 +22238,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -22246,28 +22246,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -22501,7 +22501,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -22536,7 +22536,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"base-services-groovy",
@@ -22552,7 +22552,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"cli",
@@ -22568,7 +22568,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"internal-performance-testing",
@@ -22579,7 +22579,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -22590,7 +22590,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -22598,7 +22598,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -22606,28 +22606,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -22873,7 +22873,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -22908,7 +22908,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"base-services-groovy",
@@ -22924,7 +22924,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"cli",
@@ -22940,7 +22940,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"internal-performance-testing",
@@ -22951,7 +22951,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -22962,7 +22962,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -22970,7 +22970,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -22978,28 +22978,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -23561,7 +23561,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -24035,7 +24035,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -24326,7 +24326,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -24493,7 +24493,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -24678,7 +24678,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -24807,7 +24807,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -25001,7 +25001,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -25083,7 +25083,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -25175,7 +25175,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -25301,7 +25301,7 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
@@ -25407,12 +25407,12 @@
 					"org.gradle.integtests.PluginBinaryCompatibilityCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.TaskTransitiveSubclassingBinaryCompatibilityCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"integ-test"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"base-services-groovy",
@@ -25428,7 +25428,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"cli",
@@ -25444,7 +25444,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"internal-performance-testing",
@@ -25460,7 +25460,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"messaging",
@@ -25475,7 +25475,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"reporting",
@@ -25487,7 +25487,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"persistent-cache",
@@ -25497,7 +25497,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"platform-base",
@@ -25506,7 +25506,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -25514,7 +25514,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -25522,7 +25522,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -25530,28 +25530,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
@@ -25785,7 +25785,7 @@
 					"org.gradle.internal.watch.FileSystemWatchingSettingsFinalizedBuildOperationIntegrationTest=integTest",
 					"org.gradle.internal.watch.SymlinkFileSystemWatchingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"file-watching"
 			},
@@ -25820,7 +25820,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"language-groovy",
 					"base-services-groovy",
@@ -25836,7 +25836,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"signing",
 					"cli",
@@ -25852,7 +25852,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"persistent-cache",
 					"internal-performance-testing",
@@ -25863,7 +25863,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-cache-http",
 					"snapshots",
@@ -25874,7 +25874,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-groovy",
 					"build-profile",
@@ -25882,7 +25882,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"resources-s3",
 					"ear",
@@ -25890,28 +25890,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"antlr",
 					"resources-sftp"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"core-api",
 					"resources-gcs"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"testing-base",
 					"build-events"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"reporting"
 				]
@@ -26473,7 +26473,7 @@
 					"org.gradle.integtests.resolve.rocache.StaticVersionsDynamicListingReadOnlyCacheDependencyResolutionTest=integTest",
 					"org.gradle.integtests.resolve.api.ResolvedFilesApiIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":8,
 				"subproject":"dependency-management"
 			},
@@ -26947,7 +26947,7 @@
 					"org.gradle.api.internal.changedetection.state.TaskEnumTypesInputPropertyIntegrationTest=integTest",
 					"org.gradle.api.tasks.IncrementalTaskInputsIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":6,
 				"subproject":"core"
 			},
@@ -27238,7 +27238,7 @@
 					"org.gradle.integtests.tooling.m8.ToolingApiLoggingCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.tooling.r25.TestProgressCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"tooling-api"
 			},
@@ -27405,7 +27405,7 @@
 					"org.gradle.java.compile.IncrementalJavaCompileAvoidanceAgainstJarIntegrationSpec=integTest",
 					"org.gradle.groovy.compile.InvokeDynamicGroovyCompilerSpec=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"plugins"
 			},
@@ -27590,7 +27590,7 @@
 					"org.gradle.language.cpp.CppApplicationPublishingIntegrationTest=integTest",
 					"org.gradle.language.assembler.AssemblyLanguageIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"language-native"
 			},
@@ -27719,7 +27719,7 @@
 					"org.gradle.configurationcache.ConfigurationCacheProblemReportingIntegrationTest=integTest",
 					"org.gradle.configurationcache.ConfigurationCacheConventionMappingIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":3,
 				"subproject":"configuration-cache"
 			},
@@ -27913,7 +27913,7 @@
 					"org.gradle.plugins.ide.tooling.m4.ToolingApiEclipseMinimalModelCrossVersionSpec=crossVersionTest",
 					"org.gradle.plugins.ide.idea.IdeaIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"ide"
 			},
@@ -27995,7 +27995,7 @@
 					"org.gradle.java.compile.incremental.JavaSourceIncrementalCompilationIntegrationTest=integTest",
 					"org.gradle.java.compile.jpms.compile.JavaModuleCompileIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"language-java"
 			},
@@ -28087,7 +28087,7 @@
 					"org.gradle.launcher.BuildEnvironmentIntegrationTest=integTest",
 					"org.gradle.launcher.daemon.DaemonSystemPropertiesIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"launcher"
 			},
@@ -28213,7 +28213,7 @@
 					"org.gradle.testing.junit.JUnitConsoleLoggingIntegrationTest=integTest",
 					"org.gradle.testing.junit.JUnitTestFrameworkIntegrationTest=integTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"testing-jvm"
 			},
@@ -28319,12 +28319,12 @@
 					"org.gradle.integtests.PluginBinaryCompatibilityCrossVersionSpec=crossVersionTest",
 					"org.gradle.integtests.TaskTransitiveSubclassingBinaryCompatibilityCrossVersionSpec=crossVersionTest"
 				],
-				"include":false,
+				"include":true,
 				"number":2,
 				"subproject":"integ-test"
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-use",
 					"base-services-groovy",
@@ -28340,7 +28340,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"scala",
 					"cli",
@@ -28356,7 +28356,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"kotlin-dsl-tooling-builders",
 					"internal-performance-testing",
@@ -28372,7 +28372,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"logging",
 					"messaging",
@@ -28387,7 +28387,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"model-core",
 					"reporting",
@@ -28399,7 +28399,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"composite-builds",
 					"persistent-cache",
@@ -28409,7 +28409,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"build-init",
 					"platform-base",
@@ -28418,7 +28418,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"maven",
 					"wrapper",
@@ -28426,7 +28426,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ide-native",
 					"kotlin-dsl-plugins",
@@ -28434,7 +28434,7 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"platform-native",
 					"enterprise",
@@ -28442,28 +28442,28 @@
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"workers",
 					"samples"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"plugin-development",
 					"code-quality"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"test-kit",
 					"testing-native"
 				]
 			},
 			{
-				"enableTD":false,
+				"enableTD":true,
 				"subprojects":[
 					"ivy"
 				]
