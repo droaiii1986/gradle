@@ -220,7 +220,9 @@ fun configureTests() {
     }
 
     tasks.withType<Test>().configureEach {
-        outputs.cacheIf { false }
+        if (OperatingSystem.current().isLinux) {
+            outputs.cacheIf { false }
+        }
         configureAndroidUserHome()
         filterEnvironmentVariables()
 
